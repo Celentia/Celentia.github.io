@@ -1,0 +1,140 @@
+.img-wrapper {
+	width: 32%;
+	overflow: hidden;
+	height: 300px;
+	position: relative;
+	margin-bottom: 2rem; 
+}
+.content__img {
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.gallery_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+.popup {
+	position: absolute;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+.popup_img {
+	position: fixed;
+	z-index:2;
+	width: 100vh;
+	top: 50vh;
+	transform: translateX(-50%) translateY(-50%);
+}
+#modal_close {
+	width: 21px;
+	position: fixed;
+	top: 5rem;
+	right: 2.5rem;
+	cursor: pointer;
+	display: block;
+	font-size: 32px;
+	z-index: 10;
+	color: white;
+}
+.open {
+	display: block;
+}
+
+#pagingControls {
+	padding-top:15px;
+	font-weight:bold;
+}
+#pagingControls ul {
+	display:inline;
+	padding-left:0.5em;
+}
+#pagingControls li {
+	display:inline;
+	padding:0 0.5em
+}
+#pagingControls li a {
+	text-decoration: none;
+	color: green;
+}
+#pagingControls li {
+	color: red;
+}
+#pagingControls li a:visited {
+	color: black;
+}
+
+@media (min-width: 1500px) {
+	.gallery_content {
+		justify-content: left;
+		width: 103%;
+	}
+	.img-wrapper {
+	    width: 22.5%;
+	    margin-right: 2.4%;
+	}
+}
+@media (max-width: 1200px) {
+	.img-wrapper {
+	    width: 31%;
+	}
+	.content__img {
+	    width: 110%;
+	}
+}
+@media (max-width: 950px) {
+	.img-wrapper {
+	    width: 48%;
+	}
+	.content__img {
+	    width: 100%;
+	}
+}
+@media (max-width: 800px) {
+	.popup_img {
+		width: 85%;
+	}
+	#modal_close {
+		display: none;
+	}
+}
+@media (max-width: 700px) {
+	.img-wrapper {
+	    width: 48%;
+	}
+	.content__img {
+	    width: 135%;
+	}
+}
+@media (max-width: 550px) {
+	.img-wrapper {
+	    width: 100%;
+	}
+	.content__img {
+	    width: 100%;
+	}
+}
+/* @media (max-width: 400px) {
+	.img-wrapper {
+	    width: 100%;
+	}
+	.content__img {
+	    width: 135%;
+	}
+} */
