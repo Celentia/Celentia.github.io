@@ -989,7 +989,7 @@ i {
 	position: absolute;
 	bottom: 0;
 	margin: 0;
-	z-index: 10;
+	z-index: 5;
 }
 .chooseTable {
 	margin-right: 3rem;
@@ -1126,7 +1126,9 @@ label.error {
 	    width: 208.5%;
 	}
 	.form-select {
-	    background: #fff url(../img/reservation/selectDown.png) no-repeat right 10px center;
+	   background: #fff url(../img/reservation/selectDown.png) no-repeat;
+		background-position: center right 5px;
+		background-size: 15px;
 	}
 }
 @media (max-width: 422px) {
@@ -1376,4 +1378,5 @@ footer {
     color: #ffb606;
     font-size:28px;
     font-weight: bold;
+    z-index: 10;
 }
