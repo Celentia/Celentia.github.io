@@ -101,8 +101,8 @@ nav {
 	padding-left: 5px;
 	color: white;
 	position: absolute;
-	-webkit-transition: all 0.8s;
-	transition: all 0.8s; 
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s; 
 }
 .submenu-item {
 	border-bottom: 2px solid #c7c8ca;
@@ -126,8 +126,8 @@ nav {
 	bottom: 0;
 	left: 0;
 	background: #b5b5b5;
-	-webkit-transition: width 1s;
-	transition: width 1s;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
 }
 .header__nav-item > a:hover::after{
 	width: 100%;
@@ -445,14 +445,6 @@ nav {
 	}
 	.about__img {
 		width: 30%;
-	}
-}
-@media (max-width: 1440px) {
-	.about__heading {
-	    margin-bottom: 1.5rem;
-	}
-	.about__text {
-	    font-size: 17px;
 	}
 }
 @media (max-width: 1300px) {
