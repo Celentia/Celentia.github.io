@@ -373,6 +373,9 @@ nav {
 	}
 }
 @media (max-width: 420px) {
+	header {
+		height: 90vh;
+	}
 	.header__content {
 		margin-top: 0;
 	}
