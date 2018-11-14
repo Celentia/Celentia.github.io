@@ -743,7 +743,6 @@ i {
 }
 .events__wrapper {
 	position: relative;
-	height: 100%;
 }
 #viewport {
     width: 100%;
@@ -877,9 +876,11 @@ i {
 	    display: flex;
 	    -ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	    height: 100%;
 	}
 	.events__img {
 		border-radius: 10px;
+		height: 100%;
 	}
 	.events__blog-heading {
 	    display: -webkit-box;
