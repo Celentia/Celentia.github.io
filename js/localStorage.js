@@ -17,6 +17,7 @@ $(document).ready(function() {
 				if (localStorage.getItem(localStorage.key(i)) == localStorage.getItem(localStorage.key(j))) {
 					localStorage.removeItem(localStorage.key(j));	
 					$(".select_reserved option:last").remove();	
+					alert("Столик №" + +$("#table_number option:selected").text() + " на " + $("#reservation_time option:selected").text() + " уже был забронирован");
 				}										
 			}
 		}

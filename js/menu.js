@@ -25,6 +25,6 @@ $(function() {
         
     }
     $(".item-menu").hover(function(){
-            $(".header__submenu").toggleClass("close");
-        })
+        $(".header__submenu").toggleClass("close");
+    })
 });
