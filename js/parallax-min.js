@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){$objWindow=$(window),$('div[data-type="background"]').each(function(){var o=$(this);$(window).scroll(function(){var n="100% "+-$objWindow.scrollTop()/o.data("speed")+"px";o.css({backgroundPosition:n})})})});
