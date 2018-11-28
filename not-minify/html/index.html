@@ -276,9 +276,10 @@
 			<h2 class="section__heading heading">
 				<span class="side-img left-side-img"><i></i><i></i><i></i></span>Контакты<span class="side-img right-side-img"><i></i><i></i><i></i></span>
 			</h2>
-			<div class="contacts__content">		
-				 <div id='gmap_canvas' style='height:360px;width:650px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>		
-							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1270.5991903608258!2d30.459620008022785!3d50.43740541882242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LrQsNGA0YLRiw!5e0!3m2!1sru!2sua!4v1539963568149" width="55%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+			<div class="contacts__content">	
+				<!-- К сожалению, для использования карты с меткой мне необходим ключ API, использованный ниже, но для его получения нужна регистрация в Google Cloud Platform, при использовании которой у меня снимаются деньги. Закомментированный код javascript также относится к карте с меткой.-->
+				 <!-- <div id='gmap_canvas' style='height:370px;width:55%'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>	 -->	
+						<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1270.5991903608258!2d30.459620008022785!3d50.43740541882242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LrQsNGA0YLRiw!5e0!3m2!1sru!2sua!4v1539963568149" width="55%" height="370" frameborder="0" style="border:0" allowfullscreen></iframe> 
 				<p class="contacts__text">
 					<span class="bold">Адрес:</span> г. Киев, ул. Николая Василенка, 8 <br>	
 					<span class="bold">Телефон:</span> <a href="tel:+380993332233">099-333-22-33</a><br>
@@ -301,9 +302,9 @@
 		</div>	
 	</footer>
 	<div id="toTop">&#11014;</div>
-	 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlSfz4LTnwKsd5WnfIynbF6g2mUdExpBQ&callback=initMap"
+	 <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlSfz4LTnwKsd5WnfIynbF6g2mUdExpBQ&callback=initMap"
 	  type="text/javascript"></script>
-	<!-- <script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(50.4443583,30.421381500000052),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.4443583,30.421381500000052)});infowindow = new google.maps.InfoWindow({content:'<strong>Echion restaurant</strong><br>Киев, ул. Н. Василенка 8<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+	 <script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(50.4443583,30.421381500000052),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.4443583,30.421381500000052)});infowindow = new google.maps.InfoWindow({content:'<strong>Echion restaurant</strong><br>Киев, ул. Н. Василенка 8<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
 	</script> -->
 	<script src="js/libs/jquery/dist/jquery.min.js" type="text/javascript"></script> 
 	<script async src="js/menu-min.js" type="text/javascript"></script>
